@@ -7,16 +7,16 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 export default function MainPage() {
   return (
     <div className="main-container">
-      <div className="image-container">
-        <div className="navbar">
+      <div className="navbar">
+        <div>
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/work">Work</Link>
+          <Link to="/about">About</Link>
         </div>
-        <img src={logo} alt="this is the logo" />
       </div>
-      <div className="navigation-arrow">
-        <Link to="/about">About</Link>
+      <div className="image-container">
+        <img src={logo} alt="this is the logo" />
       </div>
     </div>
   );
