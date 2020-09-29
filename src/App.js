@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-router-dom";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import MainPage from "./MainPage";
 import Nav from "./Nav";
@@ -14,10 +13,6 @@ function App() {
       <BrowserRouter>
         <Switch>
           <div className="navbar-container">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/work">Work</Link>
             <Route exact path="/" component={MainPage} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/about" component={About} />

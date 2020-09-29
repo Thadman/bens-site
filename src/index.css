@@ -16,6 +16,46 @@ code {
   background: #35363a;
 }
 
+/* styling the main container for the contact */
+.main-contact-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contact heading */
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+/* input for the submit button */
+input {
+  width: 400px;
+}
+
+form {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  width: 502px;
+  height: 200px;
+}
+
 /* centering the image */
 .image-container {
   display: flex;
@@ -26,3 +66,14 @@ code {
 }
 
 /* navbar styling */
+
+.navbar a {
+  color: white;
+}
+
+/* form styling */
+
+form input {
+  height: 30px;
+  width: 500px;
+}
