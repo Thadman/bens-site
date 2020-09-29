@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./images/bvd-black.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fa-arrow-down} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function MainPage() {
   return (
