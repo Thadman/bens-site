@@ -101,6 +101,8 @@ form input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #35363a;
+  color: white;
 }
 
 .about-main-container h1 {
