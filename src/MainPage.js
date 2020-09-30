@@ -19,7 +19,7 @@ export default function MainPage() {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/work">Work</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Get In Touch</Link>
         </div>
       </div>
       <FadeInDiv>

@@ -42,7 +42,7 @@ export default class Contact extends React.Component {
       <>
         <div className="main-contact-container">
           <div className="contact-form-container">
-            <h2>Contact</h2>
+            <h2>Get In Touch</h2>
             <form onSubmit={this.handleSubmit}>
               <div className="input-container">
                 <input
