@@ -143,4 +143,5 @@ form input {
   color: #f1f1f2;
   display: flex;
   justify-content: center;
+  padding-bottom: 15px;
 }

@@ -4,6 +4,8 @@ import MainPage from "./MainPage";
 import "./App.css";
 import Contact from "./Contact";
 import About from "./About";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -11,12 +13,12 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MainPage} />
-          {/* <Route exact path="/about" component={About} /> */}
-          {/* <Route exact path="/contact" component={Contact} /> */}
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
-      <About />
-      <Contact />
+      {/* <About FontAwesomeIcon icon={faArrowDown} size="3x" />
+      <Contact /> */}
     </div>
   );
 }
