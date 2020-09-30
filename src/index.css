@@ -28,7 +28,7 @@ code {
   justify-content: center;
   align-items: center;
   background-color: #35363a;
-  background-image: linear-gradient(right, #2b4162 0%, #12100e 74%);
+  background-image: linear-gradient(to-left, #2b4162 0%, #12100e 74%);
 }
 
 /* contact heading */
