@@ -8,7 +8,7 @@ import { fadeInDown } from "react-animations";
 
 const FadeInAnimation = keyframes`${fadeInDown}`;
 const FadeInDiv = styled.div`
-  animation: 1 5s ${FadeInAnimation};
+  animation: 1 4s ${FadeInAnimation};
 `;
 
 export default function MainPage() {
