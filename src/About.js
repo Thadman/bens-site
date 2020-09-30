@@ -18,7 +18,6 @@ export default class About extends React.Component {
     return (
       <>
         <div className="about-main-container">
-          {/* <h1>About</h1> */}
           <div className="about-small-container">
             <h2>
               <span
@@ -42,11 +41,7 @@ export default class About extends React.Component {
               quis aliqua occaecat non veniam id aute dolor. Deserunt sint
               incididunt cupidatat laboris mollit. Proident nostrud eu
               adipisicing qui culpa laboris cupidatat. Ea cillum et amet
-              exercitation. Enim minim commodo nulla voluptate eiusmod ipsum
-              Lorem in sit. Proident nostrud fugiat adipisicing laborum
-              exercitation quis cillum cupidatat laborum reprehenderit occaecat
-              qui magna pariatur. Ea nisi laborum esse pariatur cillum laborum
-              aliqua. Ad nostrud consectetur amet consectetur.
+              exercitation.
             </p>
           </div>
         </div>

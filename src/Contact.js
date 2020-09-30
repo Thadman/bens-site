@@ -40,9 +40,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <>
-        <h1>Contact</h1>
         <div className="main-contact-container">
-          <div className="form-container">
+          <div className="contact-form-container">
+            <h2>Contact</h2>
             <form onSubmit={this.handleSubmit}>
               <div className="input-container">
                 <input

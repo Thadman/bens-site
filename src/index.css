@@ -27,6 +27,8 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #35363a;
+  background-image: linear-gradient(right, #2b4162 0%, #12100e 74%);
 }
 
 /* contact heading */
@@ -44,7 +46,7 @@ form {
   height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .input-container {
@@ -66,8 +68,8 @@ textarea {
   justify-content: center;
 }
 .image-container img {
-  max-height: 700px;
-  max-width: 700px;
+  max-height: 600px;
+  max-width: 600px;
 }
 
 /* navbar styling */
@@ -93,6 +95,17 @@ form input {
   width: 500px;
 }
 
+.contact-form-container {
+  background: #48494b;
+  width: 650px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
+}
+
 /* about page styling  */
 
 .about-main-container {
@@ -115,6 +128,9 @@ form input {
   height: 700px;
   margin: auto;
   width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-small-container p {
