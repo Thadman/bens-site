@@ -4,8 +4,11 @@ import MainPage from "./MainPage";
 import "./App.css";
 import Contact from "./Contact";
 import About from "./About";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
+// can you import these here and then pass them as props to the other components so they don't have to all be class components?
+// for example <About FontAwesomeIcon icon={faArrowDown} size="3x" />
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -17,8 +20,6 @@ function App() {
           <Route exact path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
-      {/* <About FontAwesomeIcon icon={faArrowDown} size="3x" />
-      <Contact /> */}
     </div>
   );
 }
