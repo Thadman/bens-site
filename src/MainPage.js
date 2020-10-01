@@ -1,15 +1,6 @@
 import React from "react";
 import logo from "./images/bvd-black.jpg";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import styled, { keyframes } from "styled-components";
@@ -26,9 +17,12 @@ const BounceDiv = styled.div`
   animation: 10s ${bounceAnimation};
 `;
 
-export default function MainPage() {
+const MainPage = () => {
   return (
     <div className="main-container">
+      <div className="small-icon-main" onClick={() => scroll.scrollToTop()}>
+        <img src={logo} alt="this is the menu logo" />
+      </div>
       <FadeInDiv>
         <div className="image-container">
           <img src={logo} alt="this is the logo" />
@@ -37,11 +31,11 @@ export default function MainPage() {
           <div className="navigation-arrow">
             <Link
               className="about"
-              to="/about"
+              to="about"
               activeClass="active"
               id="about"
               smooth={true}
-              duration={1000}
+              duration={800}
             >
               <FontAwesomeIcon icon={faArrowDown} size="3x" />
             </Link>
@@ -50,4 +44,6 @@ export default function MainPage() {
       </FadeInDiv>
     </div>
   );
-}
+};
+
+export default MainPage;
