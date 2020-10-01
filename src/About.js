@@ -20,8 +20,8 @@ export default class About extends React.Component {
   }
   render() {
     return (
-      <ScrollAnimation animateIn="fadeIn">
-        <div className="about-main-container" id="about">
+      <ScrollAnimation animateIn="fadeIn" id="about">
+        <div className="about-main-container">
           <div className="about-small-container">
             <h2>
               <span
