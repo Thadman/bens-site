@@ -52,7 +52,7 @@ export default class About extends React.Component {
             activeClass="active"
             id="contact"
             smooth={true}
-            duration={800}
+            duration={600}
           >
             <FontAwesomeIcon icon={faArrowDown} size="3x" />
           </Link>

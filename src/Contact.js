@@ -63,7 +63,7 @@ export default class Contact extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="input-container field">
+              <div className="input-container">
                 <input
                   type="text"
                   name="number"

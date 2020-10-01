@@ -35,7 +35,7 @@ const MainPage = () => {
               activeClass="active"
               id="about"
               smooth={true}
-              duration={800}
+              duration={600}
             >
               <FontAwesomeIcon icon={faArrowDown} size="3x" />
             </Link>
