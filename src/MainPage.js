@@ -38,7 +38,7 @@ const MainPage = () => {
                 smooth={true}
                 duration={500}
               >
-                <FontAwesomeIcon icon={faArrowDown} size="3x" />
+                <FontAwesomeIcon icon={faArrowDown} size="2x" />
               </Link>
             </div>
           </BounceDiv>

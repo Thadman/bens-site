@@ -56,7 +56,7 @@ export default class About extends React.Component {
                 smooth={true}
                 duration={500}
               >
-                <FontAwesomeIcon icon={faArrowDown} size="3x" />
+                <FontAwesomeIcon icon={faArrowDown} size="2x" />
               </Link>
             </div>
           </div>
