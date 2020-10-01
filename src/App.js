@@ -7,6 +7,8 @@ import About from "./About";
 
 // can you import these here and then pass them as props to the other components so they don't have to all be class components?
 // for example <About FontAwesomeIcon icon={faArrowDown} size="3x" />
+// const icons = FontAwesomeIcon icon={faArrowDown} size="3x"
+// and then pass icons={this.icons} through to other components?
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 

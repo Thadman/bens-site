@@ -1,4 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faUser,
+//   faMobile,
+//   faEnvelope,
+// } from "@fortawesome/free-solid-svg-icons";
+// import { Form, Input } from "react-bulma-components";
 
 export default class Contact extends React.Component {
   state = {
@@ -45,6 +52,9 @@ export default class Contact extends React.Component {
             <h2>Get In Touch</h2>
             <form onSubmit={this.handleSubmit}>
               <div className="input-container">
+                {/* <span class="icon is-small is-left">
+                  <FontAwesomeIcon icon={faUser} />
+                </span> */}
                 <input
                   type="text"
                   name="name"
@@ -53,7 +63,7 @@ export default class Contact extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="input-container">
+              <div className="input-container field">
                 <input
                   type="text"
                   name="number"

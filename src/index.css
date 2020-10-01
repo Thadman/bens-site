@@ -43,10 +43,11 @@ input {
 }
 
 form {
-  height: 700px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: -5px;
 }
 
 .input-container {
@@ -58,7 +59,7 @@ form {
 textarea {
   outline: none;
   resize: none;
-  width: 502px;
+  width: 400px;
   height: 200px;
 }
 
@@ -92,13 +93,13 @@ textarea {
 
 form input {
   height: 30px;
-  width: 500px;
+  width: 400px;
 }
 
 .contact-form-container {
   background: #48494b;
-  width: 650px;
-  height: 600px;
+  width: 550px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   text-align: center;
