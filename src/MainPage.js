@@ -19,30 +19,32 @@ const BounceDiv = styled.div`
 
 const MainPage = () => {
   return (
-    <div className="main-container">
+    <>
       <div className="small-icon-main" onClick={() => scroll.scrollToTop()}>
         <img src={logo} alt="this is the menu logo" />
       </div>
-      <FadeInDiv>
-        <div className="image-container">
-          <img src={logo} alt="this is the logo" />
-        </div>
-        <BounceDiv>
-          <div className="navigation-arrow">
-            <Link
-              className="about"
-              to="about"
-              activeClass="active"
-              id="about"
-              smooth={true}
-              duration={600}
-            >
-              <FontAwesomeIcon icon={faArrowDown} size="3x" />
-            </Link>
+      <div className="main-container">
+        <FadeInDiv>
+          <div className="image-container">
+            <img src={logo} alt="this is the logo" />
           </div>
-        </BounceDiv>
-      </FadeInDiv>
-    </div>
+          <BounceDiv>
+            <div className="navigation-arrow">
+              <Link
+                className="about"
+                to="about"
+                activeClass="active"
+                id="about"
+                smooth={true}
+                duration={500}
+              >
+                <FontAwesomeIcon icon={faArrowDown} size="3x" />
+              </Link>
+            </div>
+          </BounceDiv>
+        </FadeInDiv>
+      </div>
+    </>
   );
 };
 

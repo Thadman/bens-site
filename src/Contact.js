@@ -16,7 +16,6 @@ export default class Contact extends React.Component {
   };
 
   handleChange = (e) => {
-    // e.preventDefault();
     const { name, value } = e.target;
     this.setState({
       [name]: value,
