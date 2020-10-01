@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -20,7 +20,7 @@ export default class About extends React.Component {
   render() {
     return (
       <>
-        <div className="about-main-container">
+        <div className="about-main-container" id="about">
           <div className="about-small-container">
             <h2>
               <span
@@ -48,9 +48,9 @@ export default class About extends React.Component {
             </p>
           </div>
           <div className="navigation-arrow">
-            <NavLink to="/contact">
+            <Link to="/contact">
               <FontAwesomeIcon icon={faArrowDown} size="3x" />
-            </NavLink>
+            </Link>
           </div>
         </div>
       </>
