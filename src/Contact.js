@@ -7,6 +7,12 @@ import React from "react";
 // } from "@fortawesome/free-solid-svg-icons";
 // import { Form, Input } from "react-bulma-components";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export default class Contact extends React.Component {
   state = {
     name: "",
@@ -32,6 +38,16 @@ export default class Contact extends React.Component {
       ${message}
     `);
     this.resetForm();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
   };
 
   resetForm() {
@@ -44,6 +60,7 @@ export default class Contact extends React.Component {
   }
 
   render() {
+    const { name, email, number, message } = this.state;
     return (
       <>
         <div className="main-contact-container" id="contact">
@@ -51,9 +68,6 @@ export default class Contact extends React.Component {
             <h2>Get In Touch</h2>
             <form onSubmit={this.handleSubmit}>
               <div className="input-container">
-                {/* <span class="icon is-small is-left">
-                  <FontAwesomeIcon icon={faUser} />
-                </span> */}
                 <input
                   type="text"
                   name="name"
@@ -64,7 +78,7 @@ export default class Contact extends React.Component {
               </div>
               <div className="input-container">
                 <input
-                  type="text"
+                  type="number"
                   name="number"
                   placeholder="New Zealand number (+64 27 123 4567)"
                   value={this.state.number}
@@ -73,7 +87,7 @@ export default class Contact extends React.Component {
               </div>
               <div className="input-container">
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Email"
                   value={this.state.email}
@@ -82,7 +96,7 @@ export default class Contact extends React.Component {
               </div>
               <div className="input-container">
                 <textarea
-                  type="text"
+                  type="message"
                   name="message"
                   value={this.state.message}
                   placeholder="Tell me a bit about the work..."
