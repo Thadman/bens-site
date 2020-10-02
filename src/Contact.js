@@ -60,7 +60,7 @@ export default class Contact extends React.Component {
   }
 
   render() {
-    const { name, email, number, message } = this.state;
+    // const { name, email, number, message } = this.state;
     return (
       <>
         <div className="main-contact-container" id="contact">
