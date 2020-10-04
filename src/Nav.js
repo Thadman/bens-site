@@ -11,3 +11,5 @@ export default function Nav() {
     </>
   );
 }
+
+// Ben doesn't want an NavBar

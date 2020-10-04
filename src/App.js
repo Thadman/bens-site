@@ -4,7 +4,6 @@ import MainPage from "./MainPage";
 import "./App.css";
 import Contact from "./Contact";
 import About from "./About";
-// import Form from "./Form";
 
 // can you import these here and then pass them as props to the other components so they don't have to all be class components?
 // for example <About FontAwesomeIcon icon={faArrowDown} size="3x" />
@@ -26,7 +25,6 @@ function App() {
       <MainPage />
       <About />
       <Contact />
-      {/* <Form /> */}
     </div>
   );
 }

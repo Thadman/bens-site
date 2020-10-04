@@ -1,11 +1,4 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faUser,
-//   faMobile,
-//   faEnvelope,
-// } from "@fortawesome/free-solid-svg-icons";
-// import { Form, Input } from "react-bulma-components";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -60,7 +53,6 @@ export default class Contact extends React.Component {
   }
 
   render() {
-    // const { name, email, number, message } = this.state;
     return (
       <>
         <div className="main-contact-container" id="contact">
