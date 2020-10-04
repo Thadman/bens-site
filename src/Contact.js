@@ -62,6 +62,7 @@ export default class Contact extends React.Component {
               method="POST"
               data-netlify="true"
               onSubmit={this.handleSubmit}
+              name="contact"
             >
               <div className="input-container">
                 <input
