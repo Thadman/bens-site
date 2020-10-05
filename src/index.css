@@ -147,12 +147,18 @@ form input {
 
 /* arrow styling */
 
+/* .navigation-arrow {
+  width: 500px;
+} */
+
 .navigation-arrow a {
   color: #f1f1f2;
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
 }
+
+/* PHONE STYLING */
 
 @media (max-width: 480px) {
   .image-container img {

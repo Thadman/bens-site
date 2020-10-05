@@ -20,8 +20,8 @@ export default class About extends React.Component {
   }
   render() {
     return (
-      <ScrollAnimation animateIn="fadeIn" id="about">
-        <div className="about-main-container">
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="about-main-container" id="about">
           <div className="about-small-container">
             <h2>
               <span
@@ -47,18 +47,18 @@ export default class About extends React.Component {
               adipisicing qui culpa laboris cupidatat. Ea cillum et amet
               exercitation.
             </p>
-            <div className="navigation-arrow">
-              <Link
-                className="contact"
-                to="contact"
-                activeClass="active"
-                id="contact"
-                smooth={true}
-                duration={500}
-              >
-                <FontAwesomeIcon icon={faArrowDown} size="2x" />
-              </Link>
-            </div>
+          </div>
+          <div className="navigation-arrow">
+            <Link
+              className="contact"
+              to="contact"
+              activeClass="active"
+              // id="contact"
+              smooth={true}
+              duration={500}
+            >
+              <FontAwesomeIcon icon={faArrowDown} size="2x" />
+            </Link>
           </div>
         </div>
       </ScrollAnimation>
