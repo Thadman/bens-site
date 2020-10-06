@@ -11,6 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* theme styling */
+
+.dark {
+  color: #dadada;
+  background: #35363a;
+  min-height: 100%;
+}
+
 /* background */
 .main-container {
   background: #35363a;
@@ -18,6 +27,14 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.bg-light {
+  background: #f1f1f2;
+}
+
+.bg-dark {
+  background: #35363a;
 }
 
 /* styling the main container for the contact */
@@ -36,6 +53,7 @@ code {
   padding-left: 10px;
   padding-top: 10px;
   position: fixed;
+  left: 0px;
 }
 
 /* contact heading */
@@ -74,6 +92,8 @@ textarea {
 .image-container {
   display: flex;
   justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 .image-container img {
   height: 800px;
@@ -155,7 +175,6 @@ form input {
   color: #f1f1f2;
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
 }
 
 /* PHONE STYLING */

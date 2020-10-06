@@ -1,25 +1,34 @@
 import React from "react";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
 import MainPage from "./MainPage";
 import "./App.css";
 import Contact from "./Contact";
 import About from "./About";
+// import { ThemeProvider } from "./Theme";
+import Nav from "./Nav";
 
-// can you import these here and then pass them as props to the other components so they don't have to all be class components?
-// for example <About FontAwesomeIcon icon={faArrowDown} size="3x" />
-// const icons = FontAwesomeIcon icon={faArrowDown} size="3x"
-// and then pass icons={this.icons} through to other components?
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-
-function App() {
-  return (
-    <div>
-      <MainPage />
-      <About />
-      <Contact />
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    theme: "dark",
+    toggleTheme: () => {
+      this.setState(({ theme }) => ({
+        theme: theme === "dark" ? "light" : "dark",
+      }));
+    },
+  };
+  render() {
+    return (
+      // <ThemeProvider value={this.state}>
+      <div className={this.state.theme}>
+        {/* <div> */}
+        {/* <Nav /> */}
+        <MainPage />
+        <About />
+        <Contact />
+        {/* </div> */}
+      </div>
+      // </ThemeProvider>
+    );
+  }
 }
 
 export default App;

@@ -1,15 +1,20 @@
 import React from "react";
+import { ThemeConsumer } from "./Theme";
 
 export default function Nav() {
   return (
-    <>
-      <ul className="navbar-container">
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
-      </ul>
-    </>
+    <ThemeConsumer>
+      {({ theme, toggleTheme }) => (
+        <nav className="navbar">
+          <button
+            style={{ fontSize: 30 }}
+            className="btn-clear"
+            onClick={toggleTheme}
+          >
+            {theme === "dark" ? "🌞" : "🌙"}
+          </button>
+        </nav>
+      )}
+    </ThemeConsumer>
   );
 }
-
-// Ben doesn't want an NavBar

@@ -3,19 +3,15 @@ import logo from "./images/bvd-black.jpg";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, ThemeProvider } from "styled-components";
 import { fadeInDown } from "react-animations";
-// import { bounce } from "react-animations";
+import Nav from "./Nav";
+import { ThemeConsumer } from "./Theme";
 
 const FadeInAnimation = keyframes`${fadeInDown}`;
 const FadeInDiv = styled.div`
   animation: 1 3s ${FadeInAnimation};
 `;
-
-// const bounceAnimation = keyframes`${bounce}`;
-// const BounceDiv = styled.div`
-//   animation: 10s ${bounceAnimation};
-// `;
 
 const MainPage = () => {
   return (
