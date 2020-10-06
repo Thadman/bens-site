@@ -10,6 +10,7 @@ const styles = {
   container: {
     position: "relative",
     display: "flex",
+    justifyContent: "center",
   },
   tooltip: {
     boxSizing: "border-box",
