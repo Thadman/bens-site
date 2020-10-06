@@ -4,7 +4,7 @@ import "./App.css";
 import Contact from "./Contact";
 import About from "./About";
 // import { ThemeProvider } from "./Theme";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 
 class App extends React.Component {
   state = {
