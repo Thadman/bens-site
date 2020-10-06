@@ -6,13 +6,49 @@ const encode = (data) => {
     .join("&");
 };
 
+const styles = {
+  container: {
+    position: "relative",
+    display: "flex",
+  },
+  tooltip: {
+    boxSizing: "border-box",
+    position: "absolute",
+    width: "160px",
+    bottom: "100%",
+    left: "50%",
+    marginLeft: "-80px",
+    borderRadius: "3px",
+    backgroundColor: "hsla(0, 0%, 20%, 0.9)",
+    padding: "7px",
+    marginBottom: "5px",
+    color: "#fff",
+    textAlign: "center",
+    fontSize: "14px",
+  },
+};
+
 export default class Contact extends React.Component {
   state = {
     name: "",
     email: "",
     number: "",
     message: "",
+    hovering: false,
   };
+
+  mouseOver(id) {
+    this.setState({
+      [id]: true,
+    });
+  }
+
+  mouseOut(id) {
+    console.log(this.state.hovering);
+    this.setState({
+      [id]: false,
+    });
+  }
 
   handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,11 +89,21 @@ export default class Contact extends React.Component {
   }
 
   render() {
+    const { hovering } = this.state;
     return (
       <>
         <div className="main-contact-container" id="contact">
           <div className="contact-form-container">
-            <h2>Get In Touch</h2>
+            <h2
+              onMouseOver={() => this.mouseOver("hovering")}
+              onMouseOut={() => this.mouseOut("hovering")}
+              style={styles.container}
+            >
+              {hovering === true && (
+                <div style={styles.tooltip}>Get in touch</div>
+              )}
+              Get In Touch
+            </h2>
             <form
               method="POST"
               data-netlify="true"

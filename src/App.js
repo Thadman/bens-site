@@ -15,13 +15,6 @@ import About from "./About";
 function App() {
   return (
     <div>
-      {/* <BrowserRouter> */}
-      {/* <Switch>
-      <Route exact path="/" component={MainPage} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-      </Switch> */}
-      {/* </BrowserRouter> */}
       <MainPage />
       <About />
       <Contact />

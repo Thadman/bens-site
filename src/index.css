@@ -49,13 +49,13 @@ input {
   width: 400px;
 }
 
-form {
+/* form {
   height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: -5px;
-}
+} */
 
 .input-container {
   margin-bottom: 20px;
@@ -106,9 +106,9 @@ form input {
 .contact-form-container {
   background: #48494b;
   width: 550px;
-  height: 510px;
-  display: flex;
-  flex-direction: column;
+  /* height: 510px; */
+  /* display: flex; */
+  /* flex-direction: column; */
   text-align: center;
   color: white;
   border-radius: 7px;
@@ -160,7 +160,7 @@ form input {
 
 /* PHONE STYLING */
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .image-container img {
     height: 350px;
   }
