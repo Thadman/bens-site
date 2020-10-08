@@ -21,9 +21,9 @@ export default class About extends React.Component {
   render() {
     return (
       <ScrollAnimation animateIn="fadeIn">
-        <div className="hero">
+        <section className="section">
           <div className="container" id="about">
-            <div className="columns is-centered is-mobile">
+            <div className="columns is-centered">
               <div className="column is-half">
                 <h2 className="is-size-3">
                   <span
@@ -64,7 +64,7 @@ export default class About extends React.Component {
               <FontAwesomeIcon icon={faArrowDown} size="2x" />
             </Link>
           </div>
-        </div>
+        </section>
       </ScrollAnimation>
     );
   }

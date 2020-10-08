@@ -21,9 +21,9 @@ const MainPage = () => {
       </div>
       <section className="section">
         <div className="container">
-          <div className="columns is-centered is mobile">
+          <div className="columns is-centered">
             <div className="column is-half">
-              <figure className="image is-256x256">
+              <figure className="image is-square">
                 <FadeInDiv>
                   <img src={logo} alt="this is the logo" />
                 </FadeInDiv>

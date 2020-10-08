@@ -19,16 +19,18 @@ class App extends React.Component {
   };
   render() {
     return (
-      // <ThemeProvider value={this.state}>
-      <div className={this.state.theme}>
-        {/* <div> */}
-        {/* <Nav /> */}
-        <MainPage />
-        <About />
-        <Contact />
-        {/* </div> */}
+      <div className="container">
+        {/* <ThemeProvider value={this.state}> */}
+        <div className={this.state.theme}>
+          {/* <div> */}
+          {/* <Nav /> */}
+          <MainPage />
+          <About />
+          <Contact />
+          {/* </div> */}
+        </div>
+        // {/* </ThemeProvider> */}
       </div>
-      // </ThemeProvider>
     );
   }
 }
