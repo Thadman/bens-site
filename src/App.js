@@ -3,6 +3,8 @@ import MainPage from "./MainPage";
 import "./App.css";
 import Contact from "./Contact";
 import About from "./About";
+import bulma from "bulma";
+
 // import { ThemeProvider } from "./Theme";
 // import Nav from "./Nav";
 

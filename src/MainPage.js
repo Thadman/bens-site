@@ -19,24 +19,30 @@ const MainPage = () => {
       <div className="small-icon-main" onClick={() => scroll.scrollToTop()}>
         <img src={logo} alt="this is the menu logo" />
       </div>
-      <div className="main-container">
-        <div className="image-container">
-          <FadeInDiv>
-            <img src={logo} alt="this is the logo" />
-          </FadeInDiv>
+      <section className="section">
+        <div className="container">
+          <div className="columns is-centered is mobile">
+            <div className="column is-half">
+              <figure className="image is-256x256">
+                <FadeInDiv>
+                  <img src={logo} alt="this is the logo" />
+                </FadeInDiv>
+              </figure>
+              <div className="navigation-arrow">
+                <Link
+                  className="about"
+                  to="about"
+                  activeClass="active"
+                  smooth={true}
+                  duration={500}
+                >
+                  <FontAwesomeIcon icon={faArrowDown} size="2x" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="navigation-arrow">
-          <Link
-            className="about"
-            to="about"
-            activeClass="active"
-            smooth={true}
-            duration={500}
-          >
-            <FontAwesomeIcon icon={faArrowDown} size="2x" />
-          </Link>
-        </div>
-      </div>
+      </section>
     </>
   );
 };
