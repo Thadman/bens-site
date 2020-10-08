@@ -1,4 +1,5 @@
 import React from "react";
+import bulma from "bulma";
 
 const encode = (data) => {
   return Object.keys(data)
