@@ -23,26 +23,26 @@ const MainPage = () => {
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-half">
-              <figure className="image is-square">
+              <figure className="image is-1by1">
                 <FadeInDiv>
                   <img src={logo} alt="this is the logo" />
                 </FadeInDiv>
               </figure>
-              <div className="navigation-arrow">
-                <Link
-                  className="about"
-                  to="about"
-                  activeClass="active"
-                  smooth={true}
-                  duration={500}
-                >
-                  <FontAwesomeIcon icon={faArrowDown} size="2x" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>
       </section>
+      <div className="navigation-arrow">
+        <Link
+          className="about"
+          to="about"
+          activeClass="active"
+          smooth={true}
+          duration={500}
+        >
+          <FontAwesomeIcon icon={faArrowDown} size="2x" />
+        </Link>
+      </div>
     </>
   );
 };

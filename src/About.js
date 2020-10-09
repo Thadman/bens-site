@@ -24,8 +24,8 @@ export default class About extends React.Component {
         <section className="section">
           <div className="container" id="about">
             <div className="columns is-centered">
-              <div className="column is-half">
-                <h2 className="is-size-3">
+              <div className="column is-two-thirds">
+                <h2 className="is-size-3 pb-4">
                   <span
                     ref={(el) => {
                       this.el = el;
@@ -52,19 +52,19 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div className="navigation-arrow">
-            <Link
-              className="contact"
-              to="contact"
-              activeClass="active"
-              // id="contact"
-              smooth={true}
-              duration={500}
-            >
-              <FontAwesomeIcon icon={faArrowDown} size="2x" />
-            </Link>
-          </div>
         </section>
+        <div className="navigation-arrow">
+          <Link
+            className="contact"
+            to="contact"
+            activeClass="active"
+            // id="contact"
+            smooth={true}
+            duration={500}
+          >
+            <FontAwesomeIcon icon={faArrowDown} size="2x" />
+          </Link>
+        </div>
       </ScrollAnimation>
     );
   }
