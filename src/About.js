@@ -22,7 +22,7 @@ export default class About extends React.Component {
     return (
       <ScrollAnimation animateIn="fadeIn">
         <section
-          className="section is-hero is-fullheight"
+          className="hero is-fullheight"
           style={{ background: "#535458" }}
         >
           <div className="hero-body" id="about">

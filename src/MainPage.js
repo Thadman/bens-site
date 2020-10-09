@@ -19,15 +19,17 @@ const MainPage = () => {
       <div className="small-icon-main" onClick={() => scroll.scrollToTop()}>
         <img src={logo} alt="this is the menu logo" />
       </div>
-      <section className="section is-hero is-fullheight">
-        <div className="hero-body container">
-          <div className="columns is-centered">
-            <div className="column is-half">
-              <figure className="image is-1by1">
-                <FadeInDiv>
-                  <img src={logo} alt="this is the logo" />
-                </FadeInDiv>
-              </figure>
+      <div className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="container">
+            <div className="columns is-centered">
+              <div className="column is-half">
+                <figure className="image is-1by1">
+                  <FadeInDiv>
+                    <img src={logo} alt="this is the logo" />
+                  </FadeInDiv>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -42,7 +44,7 @@ const MainPage = () => {
             <FontAwesomeIcon icon={faArrowDown} size="2x" />
           </Link>
         </div>
-      </section>
+      </div>
     </>
   );
 };
