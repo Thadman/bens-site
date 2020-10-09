@@ -33,7 +33,7 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-        <div className="navigation-arrow">
+        <div className="navigation-arrow pb-4">
           <Link
             className="about"
             to="about"

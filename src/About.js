@@ -57,7 +57,7 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
-          <div className="navigation-arrow">
+          <div className="navigation-arrow pb-4">
             <Link
               className="contact"
               to="contact"

@@ -9,17 +9,17 @@ import "bulma/css/bulma.css";
 // import Nav from "./Nav";
 
 class App extends React.Component {
-  state = {
-    theme: "dark",
-    toggleTheme: () => {
-      this.setState(({ theme }) => ({
-        theme: theme === "dark" ? "light" : "dark",
-      }));
-    },
-  };
+  // state = {
+  //   theme: "dark",
+  //   toggleTheme: () => {
+  //     this.setState(({ theme }) => ({
+  //       theme: theme === "dark" ? "light" : "dark",
+  //     }));
+  //   },
+  // };
   render() {
     return (
-      <div className={this.state.theme}>
+      <div>
         {/* <div> */}
         {/* <Nav /> */}
         <MainPage />
