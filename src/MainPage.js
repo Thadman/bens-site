@@ -19,7 +19,7 @@ const MainPage = () => {
       <div className="small-icon-main" onClick={() => scroll.scrollToTop()}>
         <img src={logo} alt="this is the menu logo" />
       </div>
-      <section className="section">
+      <section className="section is-hero is-fullheight">
         <div className="container">
           <div className="columns is-centered">
             <div className="column is-half">
