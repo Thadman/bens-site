@@ -20,7 +20,7 @@ const MainPage = () => {
         <img src={logo} alt="this is the menu logo" />
       </div>
       <section className="section is-hero is-fullheight">
-        <div className="container">
+        <div className="hero-body container">
           <div className="columns is-centered">
             <div className="column is-half">
               <figure className="image is-1by1">
@@ -31,18 +31,18 @@ const MainPage = () => {
             </div>
           </div>
         </div>
+        <div className="navigation-arrow">
+          <Link
+            className="about"
+            to="about"
+            activeClass="active"
+            smooth={true}
+            duration={500}
+          >
+            <FontAwesomeIcon icon={faArrowDown} size="2x" />
+          </Link>
+        </div>
       </section>
-      <div className="navigation-arrow">
-        <Link
-          className="about"
-          to="about"
-          activeClass="active"
-          smooth={true}
-          duration={500}
-        >
-          <FontAwesomeIcon icon={faArrowDown} size="2x" />
-        </Link>
-      </div>
     </>
   );
 };

@@ -21,7 +21,10 @@ export default class About extends React.Component {
   render() {
     return (
       <ScrollAnimation animateIn="fadeIn">
-        <section className="section is-hero is-fullheight">
+        <section
+          className="section is-hero is-fullheight"
+          style={{ background: "#535458" }}
+        >
           <div className="hero-body" id="about">
             <div className="container">
               <div className="columns is-centered">
@@ -54,19 +57,19 @@ export default class About extends React.Component {
               </div>
             </div>
           </div>
+          <div className="navigation-arrow">
+            <Link
+              className="contact"
+              to="contact"
+              activeClass="active"
+              // id="contact"
+              smooth={true}
+              duration={500}
+            >
+              <FontAwesomeIcon icon={faArrowDown} size="2x" />
+            </Link>
+          </div>
         </section>
-        <div className="navigation-arrow">
-          <Link
-            className="contact"
-            to="contact"
-            activeClass="active"
-            // id="contact"
-            smooth={true}
-            duration={500}
-          >
-            <FontAwesomeIcon icon={faArrowDown} size="2x" />
-          </Link>
-        </div>
       </ScrollAnimation>
     );
   }
