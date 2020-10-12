@@ -92,7 +92,11 @@ export default class Contact extends React.Component {
   render() {
     const { hovering } = this.state;
     return (
-      <div className="hero is-fullheight" id="contact">
+      <div
+        className="hero is-fullheight"
+        id="contact"
+        style={{ background: "#35363a" }}
+      >
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">

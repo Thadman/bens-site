@@ -22,7 +22,10 @@ const MainPage = () => {
       >
         <img src={logo} alt="this is the menu logo" />
       </div>
-      <div className="hero is-fullheight is-container-styling">
+      <div
+        className="hero is-fullheight is-container-styling"
+        style={{ background: "#35363a" }}
+      >
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">
