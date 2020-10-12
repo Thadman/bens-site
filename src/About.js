@@ -36,7 +36,7 @@ export default class About extends React.Component {
                       }}
                     />
                   </h2>
-                  <p className="is-size-5 is-mobile">
+                  <p className="is-size-5 is-mobile about-paragraph">
                     Ea duis Lorem Lorem magna consectetur qui nulla exercitation
                     est ipsum in pariatur. Ea velit fugiat consequat excepteur
                     anim ullamco sint nostrud. Nisi eiusmod quis reprehenderit

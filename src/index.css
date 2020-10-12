@@ -16,7 +16,7 @@ code {
 /* theme styling */
 
 .dark {
-  color: #dadada;
+  color: #35363a;
   background: #35363a;
   min-height: 100%;
 }
@@ -31,11 +31,19 @@ code {
 }
 
 .bg-light {
-  background: #f1f1f2;
+  background: #35363a;
 }
 
 .bg-dark {
   background: #35363a;
+}
+
+.about-paragraph {
+  color: #f1f1f2;
+}
+
+.is-contact-header {
+  color: #f1f1f2;
 }
 
 /* styling the main container for the contact */
@@ -68,14 +76,6 @@ input {
   width: 400px;
 }
 
-/* form {
-  height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: -5px;
-} */
-
 .input-container {
   margin-bottom: 20px;
   display: flex;
@@ -100,22 +100,6 @@ textarea {
   height: 800px;
   min-width: 378px;
 }
-
-/* navbar styling */
-
-/* .navbar {
-  margin: 0 auto;
-  max-width: 700px;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar a {
-  color: white;
-  margin: 0 40px 0 40px;
-  text-decoration: none;
-  font-size: 22px;
-} */
 
 /* form styling */
 

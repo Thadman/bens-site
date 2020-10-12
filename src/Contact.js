@@ -101,7 +101,7 @@ export default class Contact extends React.Component {
                   onMouseOver={() => this.mouseOver("hovering")}
                   onMouseOut={() => this.mouseOut("hovering")}
                   style={styles.container}
-                  className="is-size-4 pb-3"
+                  className="is-size-4 pb-3 is-contact-header"
                 >
                   {hovering === true && (
                     <div style={styles.tooltip}>Get in touch</div>
