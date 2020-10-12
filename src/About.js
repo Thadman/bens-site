@@ -29,7 +29,7 @@ export default class About extends React.Component {
             <div className="container">
               <div className="columns is-centered">
                 <div className="column is-two-thirds">
-                  <h2 className="is-size-3 pb-4">
+                  <h2 className="is-size-3 pb-4 about-paragraph">
                     <span
                       ref={(el) => {
                         this.el = el;
