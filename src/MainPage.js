@@ -16,10 +16,13 @@ const FadeInDiv = styled.div`
 const MainPage = () => {
   return (
     <>
-      <div className="small-icon-main" onClick={() => scroll.scrollToTop()}>
+      <div
+        className="small-icon-main is-container-styling"
+        onClick={() => scroll.scrollToTop()}
+      >
         <img src={logo} alt="this is the menu logo" />
       </div>
-      <div className="hero is-fullheight">
+      <div className="hero is-fullheight is-container-styling">
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">
