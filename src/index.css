@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #35363a;
+  background-color: #35363a;
 }
 
 code {
@@ -164,8 +164,8 @@ form input {
 /* PHONE STYLING */
 
 @media (max-width: 500px) {
-  .image-container img {
-    height: 350px;
+  .is-fullheight {
+    background-color: #35363a;
   }
 
   .main-container {

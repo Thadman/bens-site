@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
   }
 
   mouseOut(id) {
-    console.log(this.state.hovering);
+    // console.log(this.state.hovering);
     this.setState({
       [id]: false,
     });
@@ -67,9 +67,8 @@ export default class Contact extends React.Component {
       ${number}
       ${message}
     `);
-    this.resetForm();
 
-    fetch("/", {
+    fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
@@ -77,6 +76,7 @@ export default class Contact extends React.Component {
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
 
+    this.resetForm();
     e.preventDefault();
   };
 
@@ -112,11 +112,13 @@ export default class Contact extends React.Component {
                   )}
                   Get In Touch
                 </h2>
+                <input type="hidden" name="form-name" value="contact" />
                 <form
-                  method="POST"
+                  method="post"
                   data-netlify="true"
                   onSubmit={this.handleSubmit}
                   name="contact"
+                  action="/contact"
                 >
                   <div className="field">
                     <div className="control">
