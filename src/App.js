@@ -2,6 +2,7 @@ import React from "react";
 import MainPage from "./MainPage";
 import Contact from "./Contact";
 import About from "./About";
+import ThankYou from "./ThankYou";
 import "bulma/css/bulma.css";
 
 // import { ThemeProvider } from "./Theme";
@@ -21,9 +22,10 @@ class App extends React.Component {
       <div>
         {/* <div> */}
         {/* <Nav /> */}
-        <MainPage />
+        {/* <MainPage />
         <About />
-        <Contact />
+        <Contact /> */}
+        <ThankYou />
         {/* </div> */}
       </div>
     );
