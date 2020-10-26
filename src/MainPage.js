@@ -19,6 +19,7 @@ const MainPage = () => {
       <div
         className="small-icon-main is-container-styling"
         onClick={() => scroll.scrollToTop()}
+        style={{ cursor: "pointer" }}
       >
         <img src={logo} alt="this is the menu logo" />
       </div>

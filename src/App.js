@@ -22,10 +22,10 @@ class App extends React.Component {
       <div>
         {/* <div> */}
         {/* <Nav /> */}
-        {/* <MainPage />
+        <MainPage />
         <About />
-        <Contact /> */}
-        <ThankYou />
+        <Contact />
+        {/* <ThankYou /> */}
         {/* </div> */}
       </div>
     );

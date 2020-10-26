@@ -110,7 +110,7 @@ export default class Contact extends React.Component {
                   {hovering === true && (
                     <div style={styles.tooltip}>Get in touch</div>
                   )}
-                  Get In Touch
+                  Let's grab a coffee
                 </h2>
                 <input type="hidden" name="form-name" value="contact" />
                 <form
@@ -129,6 +129,7 @@ export default class Contact extends React.Component {
                         placeholder="Name"
                         value={this.state.name}
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -141,6 +142,7 @@ export default class Contact extends React.Component {
                         placeholder="Number"
                         value={this.state.number}
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -153,6 +155,7 @@ export default class Contact extends React.Component {
                         placeholder="Email"
                         value={this.state.email}
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -165,6 +168,7 @@ export default class Contact extends React.Component {
                         value={this.state.message}
                         placeholder="Tell me a bit about the work..."
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>

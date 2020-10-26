@@ -37,21 +37,17 @@ export default class About extends React.Component {
                     />
                   </h2>
                   <p className="is-size-5 is-mobile about-paragraph">
-                    Ea duis Lorem Lorem magna consectetur qui nulla exercitation
-                    est ipsum in pariatur. Ea velit fugiat consequat excepteur
-                    anim ullamco sint nostrud. Nisi eiusmod quis reprehenderit
-                    sint. Ex nisi velit velit duis minim qui nulla amet fugiat
-                    cillum. Et nisi fugiat culpa aliqua in aliquip elit
-                    voluptate nulla voluptate commodo tempor veniam labore.
-                    Veniam dolore proident sit consectetur sint aute in proident
-                    qui nostrud incididunt id officia. Mollit nostrud pariatur
-                    anim velit sit sit est laborum culpa nostrud eiusmod ad.
-                    Exercitation sit cillum consequat cillum cupidatat in et.
-                    Velit mollit mollit ad mollit fugiat et reprehenderit. Nisi
-                    mollit eiusmod mollit excepteur cupidatat esse quis aliqua
-                    occaecat non veniam id aute dolor. Deserunt sint incididunt
-                    cupidatat laboris mollit. Proident nostrud eu adipisicing
-                    qui culpa laboris cupidatat. Ea cillum et amet exercitation.
+                    I'm a graduate of Otago Polytech, both in Architectural
+                    Drafting and am a Registered Builder. I not only understand
+                    the drafting needs and possibilities, but i also understand
+                    the capabilities of the builders, allowing me draft quickly
+                    and correctly. I am well connected to the building industry,
+                    have an eye for design and love to help my fellow
+                    Dunedin-ers. I have a long list of happy customers and many
+                    more to come.
+                    <br />
+                    Fill in the contact form below for a chat, and i'll be in
+                    contact ASAP. 🤙 🤙
                   </p>
                 </div>
               </div>
