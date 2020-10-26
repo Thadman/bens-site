@@ -2,7 +2,7 @@ import React from "react";
 import MainPage from "./MainPage";
 import Contact from "./Contact";
 import About from "./About";
-import ThankYou from "./ThankYou";
+// import ThankYou from "./ThankYou";
 import "bulma/css/bulma.css";
 
 // import { ThemeProvider } from "./Theme";
