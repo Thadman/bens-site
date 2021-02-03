@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -39,13 +40,13 @@ export default class Contact extends React.Component {
   };
 
   mouseOver(id) {
+    // console.log(this.state.hovering);
     this.setState({
       [id]: true,
     });
   }
 
   mouseOut(id) {
-    // console.log(this.state.hovering);
     this.setState({
       [id]: false,
     });
@@ -185,6 +186,7 @@ export default class Contact extends React.Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

@@ -44,6 +44,11 @@ code {
   color: #f1f1f2;
 }
 
+p a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
 /* styling the main container for the contact */
 .main-contact-container {
   height: 100vh;

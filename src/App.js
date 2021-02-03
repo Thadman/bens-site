@@ -2,21 +2,11 @@ import React from "react";
 import MainPage from "./MainPage";
 import Contact from "./Contact";
 import About from "./About";
+import Footer from "./Footer";
 // import ThankYou from "./ThankYou";
 import "bulma/css/bulma.css";
 
-// import { ThemeProvider } from "./Theme";
-// import Nav from "./Nav";
-
 class App extends React.Component {
-  // state = {
-  //   theme: "dark",
-  //   toggleTheme: () => {
-  //     this.setState(({ theme }) => ({
-  //       theme: theme === "dark" ? "light" : "dark",
-  //     }));
-  //   },
-  // };
   render() {
     return (
       <div>
@@ -33,3 +23,17 @@ class App extends React.Component {
 }
 
 export default App;
+
+// to sort out context and color
+
+// import { ThemeProvider } from "./Theme";
+// import Nav from "./Nav";
+
+// state = {
+//   theme: "dark",
+//   toggleTheme: () => {
+//     this.setState(({ theme }) => ({
+//       theme: theme === "dark" ? "light" : "dark",
+//     }));
+//   },
+// };
