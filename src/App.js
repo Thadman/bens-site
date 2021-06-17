@@ -3,6 +3,7 @@ import MainPage from "./MainPage";
 import Contact from "./Contact";
 import About from "./About";
 import Footer from "./Footer";
+import NewMainPage from "./NewMainPage";
 // import ThankYou from "./ThankYou";
 import "bulma/css/bulma.css";
 
@@ -12,9 +13,10 @@ class App extends React.Component {
       <div>
         {/* <div> */}
         {/* <Nav /> */}
-        <MainPage />
+        <NewMainPage />
+        {/* <MainPage />
         <About />
-        <Contact />
+        <Contact /> */}
         {/* <ThankYou /> */}
         {/* </div> */}
       </div>

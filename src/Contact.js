@@ -52,6 +52,7 @@ export default class Contact extends React.Component {
     });
   }
 
+  // dynamic object property, can set values here.
   handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({

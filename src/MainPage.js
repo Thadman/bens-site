@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./images/bvd-black.jpg";
+import logo from "./images/benrugby.jpg";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";

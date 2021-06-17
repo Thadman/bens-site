@@ -37,17 +37,15 @@ export default class About extends React.Component {
                     />
                   </h2>
                   <p className="is-size-5 is-mobile about-paragraph">
-                    I'm a graduate of Otago Polytech, both in Architectural
-                    Drafting and am a Registered Builder. I not only understand
-                    the drafting needs and possibilities, but i also understand
-                    the capabilities of the builders, allowing me draft quickly
-                    and correctly. I am well connected to the building industry,
-                    have an eye for design and love to help my fellow
-                    Dunedin-ers. I have a long list of happy customers and many
-                    more to come.
-                    <br />
-                    Fill in the contact form below for a chat, and i'll be in
-                    contact ASAP. 🤙 🤙
+                    Hi, i'm Ben. I am a{" "}
+                    <span style={{ textDecorationLine: "line-through" }}>
+                      slightly
+                    </span>
+                    , heavily balding middle aged man just trying to make his
+                    way in the world. I think i am a bad boy, and pretend to
+                    ride dirt bikes to prove this - mainly just run around the
+                    rugby field hurting myself and losing hair. Need a house
+                    drawn up - should probs talk to Kyle.
                   </p>
                 </div>
               </div>
